@@ -4,7 +4,7 @@
  *
  * @author Greg Sabia Tucker <greg@bytecipher.io>
  * @link http://bytecipher.io
- * @version 0.6.4
+ * @version 0.6.3
  *
  * Released under MIT License. See LICENSE.txt or http://opensource.org/licenses/MIT
 */
