@@ -4,7 +4,7 @@
  *
  * @author Greg Sabia Tucker <greg@bytecipher.io>
  * @link http://bytecipher.io
- * @version 0.6.3
+ * @version 0.6.4
  *
  * Released under MIT License. See LICENSE.txt or http://opensource.org/licenses/MIT
 */
@@ -410,9 +410,9 @@
     Grapnel.CallStack = CallStack;
     Grapnel.Request = Request;
 
-    if ('function' === typeof root.define && !root.define.amd.grapnel) {
-        root.define(function(require, exports, module) {
-            root.define.amd.grapnel = true;
+    if ('function' === typeof define && define.amd && !define.amd.grapnel) {
+        define('grapnel', [], function(require, exports, module) {
+            define.amd.grapnel = true;
             return Grapnel;
         });
     } else if ('object' === typeof module && 'object' === typeof module.exports) {
